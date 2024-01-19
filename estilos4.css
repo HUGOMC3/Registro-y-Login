@@ -1,0 +1,90 @@
+* { /*Estilos CSS para ponerlo bonito
+	padding: 0; /*fuera márgenes*/
+	margin: 0;
+	-webkit-box-sizing: border-box; /*Caja*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background:#F2F2F2;   /*Color y fuente*/
+	font-size: 16px;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+}
+
+.wrap { /*Contendeor wrap*/
+	width: 90%;
+	max-width: 500px;
+	margin: auto;
+	background: #0000;
+}
+
+form {
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px;
+	background: #fff;
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	border-top:4px solid #536DFE; 
+}
+
+/*Accedemos a los input que hemos creado*/
+form input[type="text"],
+form input[type="day"],
+
+
+/*Estado focus (cuando está seleccionado) */
+form input[type="text"]:focus{
+	color:#fffff;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+}
+/*form input[type="day"]:focus,*/
+
+
+/*Reglas para ancho y alto del formulario*/
+
+
+label {
+	color:#0000;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+}
+
+/*Estilos para los errores */
+.alert {
+	padding: 1em;
+	color:#fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.alert.error {
+	background: #F2DEDE;
+	border:1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success {
+	background: #4CAF50;
+}
+
+/*Estilo del botón de envío*/
+.btn,
+form input[type="submit"]{
+	padding: 15px;
+	background: #ED572A;
+	color:#9fb9ef;
+	font-size: 1em;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	border-radius: 2px;
+	border:none;
+	float: right;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+	background: #E64A19;
+}
